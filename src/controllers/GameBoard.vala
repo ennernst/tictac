@@ -14,31 +14,17 @@
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-using Game.Board;
-using App.Configs;
 
-namespace Game.AI {
+namespace Game.Board {
 
-    public class GameAI {
-       
-        public void initialize_game(GameBoard game_board) {
+    public class GameBoard {
 
-            for (int i = 0; i < 3; i++) {
-                for (int j = 0; j < 3; j++) {
-                    game_board.board[i,j] = Constants.INITIAL_BOARD_STATE;                
-                }
-            }            
+        public int[,] board {get; set;}
+
+        public GameBoard() {
+            board = new int[2,2];
         }
 
-        public bool win() {
-            if (Constants.WIN_CONDITION == 2)
-                return true;
-            else
-                return false;
-        } 
 
-        public bool loosing_game() {
-            return false;
-        }
     }
 }

@@ -41,5 +41,8 @@ namespace App.Configs {
         public abstract const string URL_CSS = "/com/github/ennernst/tictac/css/style.css";
         public abstract const string [] ABOUT_AUTHORS = { "Ennemoser Ernst <ernenn@gmail.com>" };
         public abstract const Gtk.License ABOUT_LICENSE_TYPE = Gtk.License.GPL_3_0;
+        public abstract const int INITIAL_BOARD_STATE = 0;
+        public abstract const int WIN_CONDITION = 2;
+        public abstract const int LOOSE_CONDITION = -2;
     }
 }

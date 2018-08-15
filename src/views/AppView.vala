@@ -17,6 +17,8 @@
 
 using App.Configs;
 using App.Widgets;
+using Game.AI;
+using Game.Board;
 
 namespace App.Views {
 
@@ -54,6 +56,11 @@ namespace App.Views {
                         break;
                 }
             });
+
+            var ai = new GameAI();
+            var board = new GameBoard();
+
+            ai.initialize_game(board);
 
             this.add (welcome_view);
         }
