@@ -1,0 +1,7 @@
+build/*
+debian/build/*
+debian/com.github.ennernst.tictac.debhelper.log
+debian/com.github.ennernst.tictac.substvars
+debian/com.github.ennernst.tictac/
+debian/debhelper-build-stamp
+debian/files

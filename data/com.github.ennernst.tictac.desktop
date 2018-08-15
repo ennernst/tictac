@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=A simple TicTac game
+Comment=
+Icon=com.github.ennernst.tictac
+Exec=com.github.ennernst.tictac
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=GNOME;GTK;
+Keywords=app;vala;
